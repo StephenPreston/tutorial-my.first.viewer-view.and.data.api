@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>LMV Viewer</title>
+
+    <link rel="stylesheet" href="https://developer.api.autodesk.com/viewingservice/v1/viewers/style.css?v=v1.2.22" type="text/css">
+    <script src="https://developer.api.autodesk.com/viewingservice/v1/viewers/viewer3D.min.js?v=v1.2.22"></script>
+    <script src="Viewing.Extension.Workshop.js"></script>
+
+    <script>
+
+    function initialize() {
+        initializeViewer();
+    }
+
+    function initializeViewer() {
+
+        //This is the location of the model the viewer will load
+        // In this example, the model is local, so we don't need any server communication or authentication
+        var options = {
+            'document' : '../SampleModel/0.svf', 
+            'env':'Local', 
+        };
+        var viewerElement = document.getElementById('viewer');
+        var viewer = new Autodesk.Viewing.Private.GuiViewer3D(viewerElement, {});
+
+        Autodesk.Viewing.Initializer(options, function() {
+            viewer.initialize();
+            viewer.load(options.document);
+            viewer.addEventListener(
+                Autodesk.Viewing.GEOMETRY_LOADED_EVENT,
+                function(event) {
+                    loadExtensions(viewer);
+            });
+        });
+    }
+        
+        
+    function loadExtensions(viewer) {
+        viewer.loadExtension('Viewing.Extension.Workshop');
+    }
+
+
+
+
+    </script>
+</head>
+<body onload="initialize()" style="margin:0">
+    <div id="viewer"></div>
+</body>
+</html>
