@@ -48,4 +48,4 @@ element by clicking it with you mouse; elements are highlighted in blue when sel
 
 
 =========================
-[Home](README.md) | [Step 2](Step-2.md) | [Step 4](Step-4.md)
+[Home](README.md) | [Step 2](step-2.md) | [Step 4](step-4.md)

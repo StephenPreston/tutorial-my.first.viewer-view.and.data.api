@@ -182,4 +182,4 @@ Now its time to test your application. Double-click on the Mongoose binary you c
 
 
 =========================
-[Home](README.md) | [Step 1](step-1.md)| [Step 3](step-3.md)
+[Home](README.md) | [Step 1](step-1.md) | [Step 3](step-3.md)
