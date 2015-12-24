@@ -41,7 +41,7 @@ To work through this tutorial, you will need the following:
 * **Your favorite JavaScript editor.**
 	- If you don't already have a favorite, you might try [Brackets](http://brackets.io/) (because its free). Or you can just use a text editor.
 * **Your favourite local webserver.** 
-  - You need this because you'll be running JavaScript code in a browser page. Modern web browser security doesn't allow you to do that in a page you opened directly from your filesystem. If you don't have a favorite local webserver application, the free version of [Mongoose](https://www.cesanta.com/products) is pretty much as easy as it gets. (This tutorial assumes you'll be using Mongoose, but its not required)
+  - You need this because WebGL serves up resources from external files. If you open the webpage as a file, due to browsers' "same origin policy", a security exception will be triggered. The free version of [Mongoose](https://www.cesanta.com/products) is pretty much as easy as it gets. (This tutorial assumes you'll be using Mongoose, but its not required)
 
 <a name="WhatDontYouNeed"></a>
 ## What don't you need for your project?
