@@ -20,7 +20,7 @@
 <a name="Audience"></a>
 ## Audience
 
-This tutorial is intended to get you started with the [View & Data API](https://developer.autodesk.com/) &ndash; which is a zero-client, WebGL viewer capable of displaying 2D and 3D designs on your webpage.
+This tutorial is intended to get you started with the [View & Data API](https://developer.autodesk.com) &ndash; which is a zero-client, WebGL viewer capable of displaying 2D and 3D designs on your webpage.
 
 The tutorial is for people familiar with [JavaScript](http://www.ecma-international.org/publications/standards/Ecma-262.htm) programming and object-oriented programming concepts.
 You should also be familiar with the Autodesk View & Data technology from a user's point of view. You can play with the technology [here](https://360.autodesk.com/viewer) &ndash; simply Drag and Drop a 2D/3D file,
@@ -41,7 +41,7 @@ To work through this tutorial, you will need the following:
 * **Your favorite JavaScript editor.**
 	- If you don't already have a favorite, you might try [Brackets](http://brackets.io/) (because its free). Or you can just use a text editor.
 * **Your favourite local webserver.**
-  - You need this because you'll be running JavaScript code in a browser page. Modern web browser security doesn't allow you to do that in a page you opened directly from your filesystem. If you don't have a favorite local webserver application, the free version of [Mongoose](https://www.cesanta.com/products) is pretty much as easy as it gets. (This tutorial assumes you'll be using Mongoose, but its not required)
+  - You need this because you'll be running JavaScript code in a browser page. Modern web browser security doesn't allow you to do that in a page you opened directly from your file system. If you don't have a favorite local webserver application, the free version of [Mongoose](https://www.cesanta.com/products) is pretty much as easy as it gets. (This tutorial assumes you'll be using Mongoose, but its not required)
 
 <a name="WhatDontYouNeed"></a>
 ## What don't you need for your project?
@@ -51,7 +51,6 @@ To work through this tutorial, you will need the following:
   - If you want to dive straight into the server-side APIs, then work through [this tutorial](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data) instead. As you progress to more complex applications (beyond this tutorial), you will eventually need to implement some server-side code.
 * **GitHub commands.**
   - You don't need to understand how to use GitHub &ndash; except how to click through this readme and tutorial steps and how to download a zip file (hint &ndash; there's a button on GitHub that says 'Download ZIP'). Unlike some of our other tutorials, this tutorial doesn't make use of GitHub commands that you have to run in your terminal/command console. The tutorial steps are all separated into folders &ndash; if you don't want to write the code as you go along just launch the index.html file in the root tutorial folder and click on the link to the step you're working on.
-
 * **Terminal/Command Console.**
   - The Mac Unix Terminal is a fantastic tool. But we're not going to use it.
 
