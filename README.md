@@ -1,12 +1,11 @@
 <a name="Introduction"></a>
-# Autodesk View & Data API &ndash; My First Viewer Tutorial
+# Autodesk Forge View & Data API &ndash; My First Viewer Tutorial
 
 * [Introduction](#Introduction)
   - [Audience](#Audience)
   - [What do you need for your project?](#WhatDoYouNeed)
   - [What don't you need for your project?](#WhatDontYouNeed)
   - [What are you going to achieve in this workshop?](#WhatAreYouGoingToAchieve)
-*
 * [Step 1 &ndash; Displaying a simple model](step-1.md)
 * [Step 2 &ndash; Implementing a basic extension](step-2.md)
 * [Step 3 &ndash; Adding a selection handler](step-3.md)
