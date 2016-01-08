@@ -11,9 +11,9 @@ Copy your Mongoose binary into the root folder of the tutorial you downloaded (t
 
 Double click Mongoose in the root folder to launch index.html in your default browser. Click on the 'Step 1' link on that page. When the 'Step 1' web page loads, you should see the View & Data API viewer filling the full page.
 
-***Note &ndash; The files in this tutorial are setup assuming that the root tutorial folder is your webroot folder. Therefore, you should always start each tutorial step by launching the root folder index.html in your browser and clicking on the link to the step you want to run.***
+***Note &ndash; The files in this tutorial assume that the root tutorial folder is your webroot folder. Therefore, you should always start each tutorial step by launching the root folder index.html in your browser and clicking on the link to the step you want to run.***
 
-Congratulations! You've just launched your first View & Data API enabled webpage. :-)
+Congratulations! You've just launched your first View & Data API enabled webpage &nbsp; :-)
 
 Take some time to play with the viewer. Can you find and use these features:
 
