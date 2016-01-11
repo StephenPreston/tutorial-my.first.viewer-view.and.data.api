@@ -123,10 +123,10 @@ Just for fun, we also isolate the component that is clicked:
         propertiesHandler);
 
       _viewer.fitToView(dbId);
-      _viewer.isolateById(dbId);
+      _viewer.isolate(dbId);
     }
     else {
-      _viewer.isolateById([]);
+      _viewer.isolate([]);
       _viewer.fitToView();
       _self.panel.setVisible(false);
     }

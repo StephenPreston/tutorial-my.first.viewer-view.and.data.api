@@ -29,7 +29,7 @@
         var viewer = new Autodesk.Viewing.Private.GuiViewer3D(viewerElement, {});
 
         Autodesk.Viewing.Initializer(options, function() {
-            viewer.initialize();
+            viewer.start();
             viewer.load(options.document);
             viewer.addEventListener(
                 Autodesk.Viewing.GEOMETRY_LOADED_EVENT,

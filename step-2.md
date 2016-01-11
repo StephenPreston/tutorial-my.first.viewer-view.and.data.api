@@ -91,7 +91,7 @@ In mainpage.html, locate the place where you load the model in your viewer code:
 
 ```js
        Autodesk.Viewing.Initializer(options, function() {
-            viewer.initialize();
+            viewer.start();
             viewer.load(options.document);
         });
 ```
@@ -100,7 +100,7 @@ Add the event handler to this function:
 
 ```js
         Autodesk.Viewing.Initializer(options, function() {
-            viewer.initialize();
+            viewer.start();
             viewer.load(options.document);
             
             viewer.addEventListener(
@@ -154,7 +154,7 @@ The entire, modified mainpage.html file now looks like this:
         var viewer = new Autodesk.Viewing.Private.GuiViewer3D(viewerElement, {});
 
         Autodesk.Viewing.Initializer(options, function() {
-            viewer.initialize();
+            viewer.start();
             viewer.load(options.document);
             viewer.addEventListener(
                 Autodesk.Viewing.GEOMETRY_LOADED_EVENT,
