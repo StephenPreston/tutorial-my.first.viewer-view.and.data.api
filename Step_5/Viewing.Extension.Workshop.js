@@ -100,14 +100,14 @@
         propertiesHandler);
 
       _viewer.fitToView(dbId);
-      _viewer.isolateById(dbId);
+      _viewer.isolate(dbId);
 
       _self.startRotation();
     }
     else {
-      clearInterval(_self.interval); // where is this function defined?
+      clearInterval(_self.interval); // where is this function defined? Go to line 151.
 
-      _viewer.isolateById([]);
+      _viewer.isolate([]);
       _viewer.fitToView();
       _self.panel.setVisible(false);
     }
