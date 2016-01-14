@@ -21,7 +21,7 @@ But before you do that, here's a way to translate your own model using one of ou
 
 You should now see your model. If you don't, you may need to clear your cache or reopen the webpage using a private/anonymous window.
 
-So that you can try this even if tyou don't have your own file, an additional sample file has been included in the tutorial download. See the 'V8 Engine.stp file in the 'TestFile' folder.
+So that you can try this even if you don't have your own file, an additional sample file has been included in the tutorial download. See the 'V8 Engine.stp file in the 'TestFile' folder.
 
 
 =========================
