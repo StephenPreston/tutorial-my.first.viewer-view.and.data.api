@@ -75,6 +75,7 @@ Autodesk.Viewing.theExtensionManager.registerExtension(
         Viewing.Extension.Workshop);
 ```
 
+The comments in the code should be self-explanatory. We're defining a class (`Viewing.Extension.Workshop`). We'll be loading this into the main viewer to customize the viewer behavior. The class includes several standard methods, including the `load()` and `unload()` methods that we can use to initialize the extension when the viewer loads it and clean up after ourselves if its unloaded. Of course, we can as any other methods and properties we like to this class.
 
 ##Reference and load the extension
 
@@ -84,8 +85,7 @@ Now reference the extension file in your mainpage.html file by adding the follow
 <script src="Viewing.Extension.Workshop.js"></script>
 ```
 
-Now add code to load the extension into the viewer once it is initialized. If the extension relies on geometry in the model, you should set up an
-event to wait for the GEOMETRY_LOADED event, as some features may not be usable if the geometry in not fully loaded. (Its easiest just to always load the extension in response to that event).
+This allows us to access our extension class from our main JavaScript code. Next, add code to load the extension into the viewer once it is initialized. If the extension relies on geometry in the model, you should set up an event to wait for the GEOMETRY_LOADED event, as some features may not be usable if the geometry in not fully loaded. (Its easiest just to always load the extension in response to that event).
 
 In mainpage.html, locate the place where you load the model in your viewer code:
 
@@ -112,7 +112,9 @@ Add the event handler to this function:
         });
 ```
 
-Add another method inside the script tags that loads the extension:
+This event handler will invoke the `loadExtensions()` function when the viewer generates a `GEOMETRY_LOADED_EVENT`. 
+
+Finally, add another method inside the script tags that loads the extension into the viewer:
 
 ```js
   function loadExtensions(viewer) {
@@ -120,7 +122,7 @@ Add another method inside the script tags that loads the extension:
   }
 ```
 
-The entire, modified mainpage.html file now looks like this:
+Your modified mainpage.html file should now look like this:
 
 ```js
 <!DOCTYPE html>
@@ -175,9 +177,15 @@ The entire, modified mainpage.html file now looks like this:
 </html>
 ```
 
+
+
 ## Test the extension
 
-Now its time to test your application. Double-click on the Mongoose binary you copied to the root folder and and launch the correct mainpage.html file from the links on that page. The viewer behaves the same as before, except you now see a dialog appear confirming that your extension has been loaded.
+Now its time to test your application again. Navigate your browser to default (index.html) webpage in the tutorial root folder (i.e. browse to localhost:8080 or whatever port you setup for your local server), and then click on the Step 1 link if you're editing the  code as you go along (or Step 2 if you jst want to run the pre-prepared code). 
+
+The viewer behaves the same as before, except you now see a dialog appear confirming that your extension has been loaded This is what it looks like in Chrome - it will look slightly different in other browsers:
+
+![](img/Step-2.png)
 
 
 

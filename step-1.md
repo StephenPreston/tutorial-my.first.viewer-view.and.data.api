@@ -29,7 +29,7 @@ Take some time to play with the viewer. Can you find and use these features:
 * The Object Properties panel.
 
 # The code explained
-Open up mainpage.html from the Step_1 folder (a subfolder of the tutorial root folder). The entire HTML (and JavaScript) code looks likem this:
+Open up mainpage.html from the Step_1 folder (a subfolder of the tutorial root folder) in your favorite JavaScript editor. The entire HTML (and JavaScript) code looks like this:
 
 ```js
 <!DOCTYPE html>
@@ -54,7 +54,8 @@ Open up mainpage.html from the Step_1 folder (a subfolder of the tutorial root f
     function initializeViewer() {
 
         //This is the location of the model the viewer will load
-        // In this example, the model is local, so we don't need any server communication or authentication
+        // In this example, the model is local, so we don't need 
+        // any server communication or authentication.
         var options = {
             'document' : '../SampleModel/0.svf', 
             'env':'Local', 
@@ -67,8 +68,6 @@ Open up mainpage.html from the Step_1 folder (a subfolder of the tutorial root f
             viewer.load(options.document);
         });
     }
-
-
 
     </script>
 </head>
@@ -121,7 +120,9 @@ In this function, we:
   * The `env` parameter is set to local to tell the viewer that we're going to load a local model (i.e. a model hosted on our own server and not on the Autodesk server).
   * The `document` parameter is the path to the translated model we want to display (which is in the SampleModel subfolder of our tutorial root folder.
 * Instantiate the `viewer` variable to a new instance of our viewer class, passing in the DOM element that will be its parent (that's the `<div>` we defined in the HTML `<body>`).
+
 * Call the `Autodesk.Viewing.Initializer()` function to setup the viewer (this is defined in the `viewer3D.min.js` script we referenced earlier), passing in our viewer options and a callback function that will run when `Initializer` has finished.
+
 * In the callback function, we tell the viewer to start up and then to load our model.
 
 And that's it - those few lines of JavaScript code are all we need to add a beautiful, interactive 3D model to our webpage.
